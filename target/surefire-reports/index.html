@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-API">
+              <span class="suite-name border-failed">API</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-API">
+                    <span>D:\September\RestAssuredAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-API">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-API">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-API">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-API">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-API">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-API">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-API" class="hide-methods failed suite-API"> (hide)</a> <!-- hide-methods failed suite-API -->
+                      <a href="#" panel-name="suite-API" class="show-methods failed suite-API"> (show)</a> <!-- show-methods failed suite-API -->
+                    </span>
+                    <div class="method-list-content failed suite-API">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API" title="testcases.TC005_Delete_Record" hash-for-method="deleteuser">deleteuser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-API -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-API" class="hide-methods passed suite-API"> (hide)</a> <!-- hide-methods passed suite-API -->
+                      <a href="#" panel-name="suite-API" class="show-methods passed suite-API"> (show)</a> <!-- show-methods passed suite-API -->
+                    </span>
+                    <div class="method-list-content passed suite-API">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API" title="testcases.TC003_Add_User" hash-for-method="adduser">adduser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API" title="testcases.TC001_Get_All_Users" hash-for-method="getAllUsers">getAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API" title="testcases.TC002_Get_Single_user" hash-for-method="getsingleuser">getsingleuser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API" title="testcases.TC004_Update_User" hash-for-method="updateuser">updateuser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-API -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-API" class="panel API">
+          <div class="suite-API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC005_Delete_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteuser">
+                  </a> <!-- deleteuser -->
+                  <span class="method-name">deleteuser</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at testcases.TC005_Delete_Record.deleteuser(TC005_Delete_Record.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API-class-failed -->
+          <div class="suite-API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC002_Get_Single_user</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getsingleuser">
+                  </a> <!-- getsingleuser -->
+                  <span class="method-name">getsingleuser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API-class-passed -->
+          <div class="suite-API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC001_Get_All_Users</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllUsers">
+                  </a> <!-- getAllUsers -->
+                  <span class="method-name">getAllUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API-class-passed -->
+          <div class="suite-API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC003_Add_User</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adduser">
+                  </a> <!-- adduser -->
+                  <span class="method-name">adduser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API-class-passed -->
+          <div class="suite-API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC004_Update_User</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateuser">
+                  </a> <!-- updateuser -->
+                  <span class="method-name">updateuser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API-class-passed -->
+        </div> <!-- panel API -->
+        <div panel-name="test-xml-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\September\RestAssuredAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;API&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC005_Delete_Record&quot;/&gt;
+      &lt;class name=&quot;testcases.TC004_Update_User&quot;/&gt;
+      &lt;class name=&quot;testcases.TC002_Get_Single_user&quot;/&gt;
+      &lt;class name=&quot;testcases.TC001_Get_All_Users&quot;/&gt;
+      &lt;class name=&quot;testcases.TC003_Add_User&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- API --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_API');
+function tableData_API() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'deleteuser')
+data.setCell(0, 2, 'testcases.TC005_Delete_Record')
+data.setCell(0, 3, 6511);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'updateuser')
+data.setCell(1, 2, 'testcases.TC004_Update_User')
+data.setCell(1, 3, 1179);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'adduser')
+data.setCell(2, 2, 'testcases.TC003_Add_User')
+data.setCell(2, 3, 89);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getAllUsers')
+data.setCell(3, 2, 'testcases.TC001_Get_All_Users')
+data.setCell(3, 3, 68);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getsingleuser')
+data.setCell(4, 2, 'testcases.TC002_Get_Single_user')
+data.setCell(4, 3, 53);
+window.suiteTableData['API']= { tableData: data, tableDiv: 'times-div-API'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-API">
+              </div> <!-- times-div-API -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC005_Delete_Record</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteuser</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC004_Update_User</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6552 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">updateuser</span>
+                <span class="method-start">6553 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC002_Get_Single_user</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7733 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getsingleuser</span>
+                <span class="method-start">7739 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC001_Get_All_Users</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7794 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getAllUsers</span>
+                <span class="method-start">7795 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC003_Add_User</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7865 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">adduser</span>
+                <span class="method-start">7867 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

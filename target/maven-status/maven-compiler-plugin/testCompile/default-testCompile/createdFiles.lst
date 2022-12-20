@@ -1,0 +1,7 @@
+DataParameterisation\Dataparameerisatonuser.class
+testcases\TC004_Update_User.class
+testcases\TC001_Get_All_Users.class
+testcases\TC005_Delete_Record.class
+testcases\TC003_Add_User.class
+testcases\TC002_Get_Single_user.class
+testcases\APITestBASE.class

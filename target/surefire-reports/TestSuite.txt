@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.384 sec <<< FAILURE! - in TestSuite
+deleteuser(testcases.TC005_Delete_Record)  Time elapsed: 6.52 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at testcases.TC005_Delete_Record.deleteuser(TC005_Delete_Record.java:37)
+
